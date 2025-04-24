@@ -1,19 +1,19 @@
-type TechType = {
+export type TechType = {
     id: number,
     title: string
 }
 
-type LocalCityType ={
+export type LocalCityType ={
     title: string,
     countryTitle: string
 }
 
-type AddressType = {
+export type AddressType = {
     streetTitle: string,
     city: LocalCityType
 }
 
-type StudentType = {
+export type StudentType = {
     id: number,
     name: string,
     age: number,
@@ -22,7 +22,7 @@ type StudentType = {
     technologies: Array<TechType>
     }
 
-const student : StudentType = {
+export const student : StudentType = {
     id: 1,
     name: "Dimych",
     age: 32,
@@ -49,5 +49,3 @@ const student : StudentType = {
         }
     ]
 }
-
-console.log(student)
